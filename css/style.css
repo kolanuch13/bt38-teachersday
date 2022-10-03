@@ -1,0 +1,508 @@
+
+/* MAIN */
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+}
+
+.sectіon {
+    display: block;
+    width: 100%;
+}
+
+/* HEADER */
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    height: 150px;
+    background-image: url(../images/grape.jpg);
+    background-color: #e0b0f8;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.header-text {
+    font-family: monospace;
+}
+
+/* JUST THE LINE */
+
+.line {
+    height: 75px;  
+    background-image: url(../images/dancing_man.svg);
+    background-size: contain;
+    background-color: rgb(65, 65, 65);
+}
+
+.dancing-man {
+    width: 50px;
+}
+
+/* YAROSLAV BOLDUSHEV */
+
+.animation-container{
+
+    height: 1000px;
+    box-sizing: border-box;
+    /* background-color: rgb(255, 113, 160); */
+    background-image: linear-gradient(to top left, rgb(255, 113, 160), rgb(253, 199, 155));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 150px;
+    padding-bottom: 60px;
+    flex-direction: column;
+}
+.congrats {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: black;
+    text-shadow: 0px 5px 5px rgb(0, 174, 255);
+    transition: letter-spacing 1000ms, text-shadow 1000ms;
+}
+.congrats-details {
+    margin-top: 5px;
+    margin-bottom: 30px;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 0.2rem;
+    color: black;
+    text-shadow: 1px 1px 3px rgb(0, 174, 255);
+    opacity: 0;
+    transition: opacity 500ms;
+    transition-delay: 1500ms;
+}
+.teachers-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding-top: 175px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.teachers-list-item{
+    border: 5px solid rgb(157, 243, 234);
+    border-radius: 2%;
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    box-shadow: 0px 15px 15px greenyellow, 0px 20px 15px turquoise, 0px 25px 15px royalblue;
+}
+.nastya{
+    transform-origin: bottom right;
+    transition: transform 1000ms, opacity 500ms;
+}
+.animation-container:hover .nastya{
+    transform: rotate(30deg) translate(100%, -20%);
+}
+.losha{
+    transform-origin: bottom left;
+    transition: transform 1000ms, opacity 500ms;
+}
+.animation-container:hover .losha {
+    transform: rotate(-30deg) translate(-100%, -20%);
+}
+.tofik{
+    transition: transform 1000ms, opacity 500ms;
+}
+.animation-container:hover .tofik{
+    transform: translate(0, -20%);
+}
+.card{
+    animation-timing-function:ease-in;
+    transition: transform 600ms;
+}
+.animation-container:hover .card{
+    transform: scale(0.7) translate(0, 100%) rotate(360deg);
+}
+.animation-container:hover .congrats{
+    letter-spacing:1rem;
+    text-shadow: 0px -10px 5px yellow, 0px 10px 5px rgb(0, 174, 255);
+}
+.animation-container:hover .congrats-details{
+    opacity: 1;
+    
+}
+
+/* ROMAN SHULGA */
+
+.from-roma {
+    background-image: url(../images/flower_1.jpg);
+    background-color: #e0b0f8;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: fill;
+}
+
+.roma-text {
+    margin: 0;
+}
+
+.greeting-title {
+    text-align: center;
+}
+
+i {
+    color: rebeccapurple;
+    letter-spacing: 1.5px;
+    word-spacing: 5px;
+
+    text-decoration: underline;
+}
+
+.greeting {
+        height: 600px;
+}
+
+.greeting-thumb {
+    overflow: hidden;
+    width: 500px;
+    margin: 0 auto;
+    border: 3px solid darkslateblue;
+    border-radius: 10px;
+}
+
+.greeting-card {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.greeting-img {
+    width: 100%;
+}
+
+.roma-span:nth-child(1) {
+    color: deeppink;
+}
+
+.roma-span:nth-child(2) {
+    color: blue;
+}
+
+.roma-span:nth-child(3) {
+    color: red;
+}
+
+.greeting-overlay {
+    position: absolute;
+    padding: 40px;
+    background-color: paleturquoise;
+
+    transform: translateY(-100%);
+
+    transition: transform 500ms ease-in-out;
+}
+
+.greeting-hover-text {
+    text-align: center;
+}
+
+.greeting-thumb:hover .greeting-overlay {
+    transform: translateY(0);
+}
+
+.greeting-hover-wrapper {
+    padding: 40px;
+}
+
+.greeting-overlay-first {
+    position: relative;
+}
+
+/* YANA REPAK */
+
+.yana-section {
+    background-image: url(../images/belije.jpg);
+    background-color: #e0b0f8;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.yana-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+
+.yana-text {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 26px;
+
+}
+
+.yana-text::first-letter {
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 46px;
+    color: orangered;
+    margin-left: 15px;
+}
+
+.yana-image {
+    margin-left: 25px;
+}
+
+/* ANNA KRYSENKO */
+
+.list-anna {
+    list-style: none;
+}
+
+.krysenko-section {
+    width: 100vw;
+    height: 100vh;
+
+    position: relative;
+
+    /* background-color: #0093e9; */
+    background: rgb(64, 185, 255);
+    background: linear-gradient(288deg,
+            rgba(64, 185, 255, 1) 10%,
+            rgba(0, 75, 119, 1) 100%);
+}
+
+/* ========================= marquee  ========================= */
+.krysenko_marquee_top,
+.krysenko_marquee_bottom {
+    color: #04306a;
+    background-color: #f5f8b0;
+    font-family: 'Amatic SC', cursive;
+    font-size: 2vh;
+    font-weight: 700;
+    word-spacing: 45px;
+    width: 100%;
+    letter-spacing: 1rem;
+
+    padding: 5px 0;
+}
+
+.krysenko_marquee_top {
+    position: absolute;
+    top: 0;
+}
+
+.krysenko_marquee_bottom {
+    position: absolute;
+    bottom: 0;
+}
+
+/* ======================================================= */
+
+.krysenko-container {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+
+    color: white;
+
+    font-family: 'Ubuntu Condensed', sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+
+    padding: 4vh 4vw;
+}
+
+/* ============= left-side =============== */
+
+.krysenko-left-side {
+    padding: 20px;
+    line-height: 1.3;
+    letter-spacing: 0.03em;
+    background-image: url('./images/girl.png');
+    background-size: 180px;
+    background-repeat: no-repeat;
+    background-position: top 60px right 20px;
+}
+
+.krysenko-title {
+    font-family: 'Amatic SC', cursive;
+    font-size: 32px;
+    font-weight: 700;
+
+    margin-bottom: 40px;
+
+    color: #f5f8b0;
+}
+
+.krysenko-subtitle {
+    font-size: 24px;
+    margin-bottom: 100px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.krysenko-thanks {
+    padding: 15px;
+    background-image: linear-gradient(0deg, #ffffff30 50%, #ffffff30 100%);
+    border-radius: 15px;
+}
+
+.krysenko-text {
+    margin-bottom: 20px;
+    font-size: 18px;
+
+    color: #f5f8b0;
+}
+
+.krysenko-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.krysenko-list-item {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.krysenko-list-item:nth-child(1):before {
+    content: '\1F525';
+}
+
+.krysenko-list-item:nth-child(2):before {
+    content: '\1F4AA';
+}
+
+.krysenko-list-item:nth-child(3):before {
+    content: '\1F60C';
+}
+
+/* ==============right side================== */
+
+.krysenko-right-side {
+    padding: 20px;
+}
+
+.krysenko-mentors-list {
+    background-image: linear-gradient(0deg, #ffffff30 50%, #ffffff30 100%);
+    border-radius: 15px;
+    display: flex;
+    column-gap: 70px;
+    max-width: 50vw;
+    padding: 15px;
+}
+
+.krysenko-wrapper {
+    position: relative;
+}
+
+.krysenko-mentors-list-item:hover,
+.krysenko-mentors-list-item:focus {
+    transform: scale(1.7);
+    transition-duration: 500ms;
+    box-shadow: rgb(0, 53, 61) 0px 20px 50px -10px;
+}
+
+.krysenko-mentor-discrip {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    z-index: 2;
+
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    height: 16%;
+    background-color: #f6f8b08a;
+    color: #3486f2;
+    text-align: center;
+
+    font-family: 'Amatic SC', cursive;
+}
+
+.krysenko-mentor-about {
+    background-color: #f6f8b0;
+    color: #3486f2;
+    display: none;
+    text-align: center;
+}
+
+.krysenko-about-item {
+    font-size: 10px;
+}
+
+.kysenko-about-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.krysenko-mentors-list-item:hover,
+.krysenko-mentors-list-item:focus {
+    transform: scale(1.7);
+    transition-duration: 500ms;
+}
+
+.krysenko-mentors-list-item:hover .krysenko-mentor-discrip,
+.krysenko-mentors-list-item:focus .krysenko-mentor-discrip {
+    display: none;
+}
+
+.krysenko-mentors-list-item:hover .krysenko-mentor-about,
+.krysenko-mentors-list-item:focus .krysenko-mentor-about {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* FOOTER */
+
+.footer {
+    background-size: contain;
+    font-family: monospace;
+    color: white;
+    background-color: rgb(65, 65, 65);
+}
+
+.text-footer {
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+}
