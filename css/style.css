@@ -33,6 +33,7 @@ img {
     align-items: center;
     text-transform: uppercase;
     height: 150px;
+    color: #ffffff;
     background-image: url(../images/grape.jpg);
     background-color: #e0b0f8;
     background-repeat: no-repeat;
